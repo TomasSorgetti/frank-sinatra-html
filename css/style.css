@@ -276,6 +276,7 @@ header section p{
 .call_to_action h2{
     position: relative;
     z-index: 2;
+    line-height: 1;
 }
 .call_to_action h2::before{
     content: "";
@@ -283,9 +284,9 @@ header section p{
     z-index: -1;
     background-color: rgba(49, 129, 254,0.6);
     height: 41px;
-    width: 289px;
-    bottom: -5px;
-    left: 66px;
+    width: 350px;
+    bottom: -15px;
+    left: 72px;
 }
 
 .call_to_action p{
@@ -305,7 +306,6 @@ header section p{
 .call_to_action a:hover{
     background-color: #00255C;
 }
-
 
 
 /************ footer **********/
