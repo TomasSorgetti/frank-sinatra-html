@@ -1,11 +1,13 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <!-- css styles link -->
     <link rel="stylesheet" href="css/style.css" />
-    <script src="js/prefixer.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+    <!-- site title -->
     <title>Frank Sinatra | Inicio</title>
   </head>
   <body>
@@ -18,21 +20,29 @@
           </ul>
         </nav>
         <section class="container parallax">
+          <!-- hero title -->
           <h1 id="title">Frank Sinatra</h1>
+          <!-- hero subtitle -->
           <span>La voz que definió una era</span>
+          <!-- hero description -->
           <p>
             Uno de los cantantes más influyentes del siglo XX, conocido por su
             voz inigualable y su estilo único.
           </p>
+          <!-- hero CTA button -->
           <a class="header_btn" href="#main">ver más</a>
         </section>
       </header>
 
+      <!-- main content -->
       <main id="main">
+        <!-- biografía section -->
         <section class="biografia container">
           <div class="biografia_first">
             <div>
+              <!-- biografía title -->
               <h2>Biografía</h2>
+              <!-- biografía description -->
               <p>
                 Lorem ipsum dolor sit amet consectetur. Velit amet lectus ac
                 tincidunt et eu lorem sit elit. Lectus id feugiat purus sem amet
@@ -50,6 +60,7 @@
               src="assets/biografia_frank2.png"
               alt="Frank Sinatra en blanco y negro mirando de costado"
             />
+            <!-- biografía description 2 -->
             <p>
               Lorem ipsum dolor sit amet consectetur. Velit amet lectus ac
               tincidunt et eu lorem sit elit. Lectus id feugiat purus sem amet
@@ -64,9 +75,13 @@
             </p>
           </div>
         </section>
+
+        <!-- galería section -->
         <section class="galeria">
           <div class="container">
+            <!-- galería title -->
             <h2>Una Vida en Fotografías</h2>
+            <!-- galería grid -->
             <div class="galeria_grid">
               <img src="assets/grid1.png" alt="Frank Sinatra no se que poner" />
               <img src="assets/grid2.png" alt="Frank Sinatra no se que poner" />
@@ -75,9 +90,13 @@
             </div>
           </div>
         </section>
+
+        <!-- CTA section -->
         <section class="call_to_action container">
           <div>
+            <!-- CTA title -->
             <h2>Lorem ipsum</h2>
+            <!-- CTA description -->
             <p>
               Lorem ipsum dolor sit amet consectetur. Velit amet lectus ac
               tincidunt et eu lorem sit elit. Lectus id feugiat purus sem amet
@@ -85,6 +104,7 @@
               sagittis elit cras enim.interdum pellentesque. Et nec nisl arcu
               arcu.
             </p>
+            <!-- CTA button -->
             <a href="pages/discografia.html">Ver Discografía</a>
           </div>
           <img
@@ -93,26 +113,39 @@
           />
         </section>
       </main>
+
+      <!-- footer -->
       <footer>
+        <!-- footer nav -->
         <nav class="container">
           <a class="footer_logo" href="index.html">Frank Sinatra</a>
+
+          <!-- footer nav_links -->
           <ul>
             <li><a class="nav_active" href="index.html">Inicio</a></li>
             <li><a href="pages/discografia.html">Discografía</a></li>
           </ul>
         </nav>
+
+        <!-- footer copyright -->
         <div class="footer_copyright">
           <p>Tomás Sorgetti - Maquetado y Desarrollo Web Escuela Da Vinci</p>
           <p>TP2 del primer cuatrimestre - Profesora Mabel García</p>
           <p>2024</p>
         </div>
       </footer>
+
+      <!-- audio player -->
       <audio id="myAudio">
         <source src="assets/thats_life.mp3" type="audio/mpeg" />
         Tu navegador no soporta el elemento de audio.
       </audio>
       <button id="playPauseButton"></button>
     </div>
-    <script src="js/main.js"></script>
+
+    <!-- scripts, api jquery & prefixer -->
+    <script src="scripts/prefixer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="scripts/main.js"></script>
   </body>
 </html>

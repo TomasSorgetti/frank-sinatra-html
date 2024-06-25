@@ -91,13 +91,13 @@ p{
     margin-right: auto;
 }
 
-.paralla{
+.parallax{
     position: relative;
+    animation: fade-right 1s ease-in-out;
 }
 
 
 
-/********** Inicio ***********/
 
 /********** Header ***********/
 header{
@@ -202,6 +202,16 @@ header section p{
 .biografia{
     padding: 100px 0px;
 }
+.biografia_first{
+    animation: fade-right 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 800px;
+}
+.biografia_second{
+    animation: fade-left 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 800px;
+}
 .biografia_first, .biografia_second{
     display: flex;
     justify-content: space-between;
@@ -247,6 +257,9 @@ header section p{
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
+    animation: fade-in 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 800px;
 }
 
 
@@ -256,6 +269,9 @@ header section p{
     padding-top: 100px;
     display: flex;
     justify-content: space-between;
+    animation: fade-right 2s ease-in-out;
+    animation-timeline: view();
+    animation-range: 0 800px;
 }
 .call_to_action h2{
     position: relative;
@@ -326,13 +342,142 @@ footer nav{
 
 
 /*********** Discografia ***********/
-.header_discografia{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
+
+/********** Header ***********/
 .header_discografia section{
+    position: relative;
+    padding-bottom: 0px;
+    animation: fade-right 1s ease-in-out;
+}
+.header_discografia img{
+    position: absolute;
+    bottom: -52px;
+    right: -200px;
+}
+
+/********** Main ***********/
+.discografia_container{
+    padding: 100px 0px;
+    text-align: center;
+    position: relative;
+}
+.discografia{
+    position: absolute;
+    opacity: 0;
+    margin: 80px 0px;
     display: flex;
     justify-content: space-between;
-    padding-bottom: 0px;
+    align-items: start;
+    gap: 40px;
+    color: #00255C;
+    transition: all 0.8s ease;
+}
+.discografia.active{
+    opacity: 1;
+    z-index: 2;
+}
+.discografia h3 {
+    font-size: 2rem;
+    color: #030921;
+    margin-bottom: 20px;
+}
+.discografia img {
+    border-radius: 6px;
+}
+.discografia_album_description {
+    text-align: left;
+    font-size: 1.5rem;
+    position: relative;
+    height: 513px;
+}
+.discografia_album_songs {
+    margin-left: 24px;
+    margin-top: 20px;
+    
+}
+
+.discografia_album_button {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    color: #030921;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.discografia_album_button:hover {
+    text-decoration: underline;
+}
+
+
+/*********** Album Selector ***********/
+.album_selector{
+    display: flex;
+    justify-content: space-between;
+    padding-bottom: 80px;
+    margin-top: 600px;
+}
+.album{
+    width: 249px;
+    height: 249px;
+    border-radius: 6px;
+    cursor: pointer;
+    filter: brightness(0.3);
+    transition: all 0.6s ease;
+}
+.album:hover{
+    box-shadow: #00255C 0px 0px 5px 2px;
+    
+}
+.album.active {
+    filter: brightness(1);
+    transform: translateY(-15px);
+}
+
+
+.album1{
+    background-image: url("../assets/album/album_min/new_york_min.png");
+}
+.album2{
+    background-image: url("../assets/album/album_min/my_way_min.png");
+}
+.album3{
+    background-image: url("../assets/album/album_min/come_fly_with_me.png");
+}
+.album4{
+    background-image: url("../assets/album/album_min/thats_life_min.png");
+}
+
+
+
+
+/*********** Keyframes **********/
+@keyframes fade-in {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+}
+
+@keyframes fade-right {
+    0% {
+        opacity: 0;
+        transform: translateX(-100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
+}
+@keyframes fade-left {
+    0% {
+        opacity: 0;
+        transform: translateX(100px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateX(0px);
+    }
 }

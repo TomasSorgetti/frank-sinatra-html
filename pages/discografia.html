@@ -8,8 +8,10 @@
   </head>
   <body>
     <div class="wrapper">
+      <!-- header -->
       <header class="header_discografia">
-        <nav>
+        <!-- nav -->
+        <nav class="container">
           <ul>
             <li><a href="../index.html">Inicio</a></li>
             <li>
@@ -17,37 +19,164 @@
             </li>
           </ul>
         </nav>
-        <section>
+        <!-- hero section -->
+        <section class="container">
           <div>
+            <!-- hero title -->
             <h1>Frank Sinatra</h1>
+            <!-- hero subtitle -->
             <span>La voz que definió una era</span>
+            <!-- hero description -->
             <p>
               Lorem ipsum dolor sit amet consectetur. Velit amet lectus ac
               tincidunt et eu lorem sit elit. Lectus id feugiat purus sem
             </p>
           </div>
+          <!-- hero image -->
           <img
             src="../assets/frankPng.jpg"
             alt="Frank Sinatra mirando de frente"
           />
         </section>
       </header>
+
+      <!-- main content -->
       <main>
-        <section>
+        <!-- Albums y canciones section -->
+        <section class="container discografia_container">
+          <!-- albums y canciones title -->
           <h2>Álbumes y Canciones</h2>
-          <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Iure est
-            rerum quas id molestiae voluptatibus ipsa doloribus quidem maxime
-            commodi dignissimos autem fugit, tenetur dolore ab magnam adipisci
-            impedit laudantium! Corporis ratione iusto, neque quibusdam eligendi
-            dolore autem voluptate eum, sapiente nisi sequi accusamus delectus,
-            placeat aliquid ea ex quis ducimus nulla! Molestias amet,
-            repellendus corrupti eum dicta delectus eos.
-          </p>
+
+          <!-- album 1 -->
+          <article class="discografia active">
+            <!-- album image -->
+            <img src="../assets/album/new_york.png" alt="new york album" />
+            <!-- album description container -->
+            <div class="discografia_album_description">
+              <!-- album title -->
+              <h3>New York, New York</h3>
+              <!-- album description -->
+              <p>
+                El disco mezcla clásicos atemporales y éxitos contemporáneos.
+                Destacan temas como "New York, New York" que se convirtió en un
+                himno icónico, junto a otras canciones que demuestran su carisma
+                y talento vocal.
+              </p>
+              <!-- album songs list -->
+              <ol class="discografia_album_songs">
+                <li lang="en">I'll Never Smile Again</li>
+                <li lang="en">Oh! Look at Me Now</li>
+                <li lang="en">This Love of Mine</li>
+                <li lang="en">Too Marvelous for Words</li>
+                <li lang="en">They Cant't Take That Away from Me</li>
+              </ol>
+              <a class="discografia_album_button" href="#" target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </article>
+
+          <!-- album 2 -->
+          <article class="discografia">
+            <!-- album image -->
+            <img src="../assets/album/my_way.png" alt="my way album" />
+            <!-- album description container -->
+            <div class="discografia_album_description">
+              <!-- album title -->
+              <h3>My Way</h3>
+              <!-- album description -->
+              <p>
+                El disco incluye una selección de canciones contemporáneas de la
+                época. Destaca "My Way," que se ha convertido en una de sus
+                canciones más famosas. También presenta covers de otros éxitos
+                como "Yesterday" de The Beatles y "Mrs. Robinson" de Simon &
+                Garfunkel
+              </p>
+              <!-- album songs list -->
+              <ul class="discografia_album_songs">
+                <li lang="en">Watch What Happens</li>
+                <li lang="en">Didnt't We?</li>
+                <li lang="en">Hallelujah, I Love Her So</li>
+                <li lang="en">Yesterday</li>
+                <li lang="en">All My Tomorrows</li>
+              </ul>
+              <a class="discografia_album_button" href="#" target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </article>
+
+          <!-- album 3 -->
+          <article class="discografia">
+            <!-- album image -->
+            <img
+              src="../assets/album/come_fly_with_me.png"
+              alt="come fly with me album"
+            />
+            <!-- album description container -->
+            <div class="discografia_album_description">
+              <!-- album title -->
+              <h3>Come Fly With Me</h3>
+              <!-- album description -->
+              <p>
+                El album celebra los viajes y la aventura. Incluye clásicos como
+                "Come Fly with Me" y "Moonlight in Vermont," destacando la
+                interpretación carismática de Sinatra.
+              </p>
+              <!-- album songs list -->
+              <ul class="discografia_album_songs">
+                <li lang="en">Come Fly with Me</li>
+                <li lang="en">Arround the World</li>
+                <li lang="en">Isle of Capri</li>
+                <li lang="en">Moonlight in Vermont</li>
+                <li lang="en">Autumn in New York</li>
+              </ul>
+              <a class="discografia_album_button" href="#" target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </article>
+
+          <!-- album 4 -->
+          <article class="discografia">
+            <!-- album image -->
+            <img src="../assets/album/thats_life.png" alt="that´s life album" />
+            <!-- album description container -->
+            <div class="discografia_album_description">
+              <!-- album title -->
+              <h3>That's Life</h3>
+              <!-- album description -->
+              <p>
+                Destaca por su título homónimo, una canción que se convirtió en
+                uno de sus grandes éxitos. El álbum mezcla pop y jazz,
+                reflejando la resiliencia y la experiencia de la vida con la
+                inimitable voz y estilo de Sinatra.
+              </p>
+              <!-- album songs list -->
+              <ul class="discografia_album_songs">
+                <li lang="en">that´s life</li>
+                <li lang="en">I Will Wait for You</li>
+                <li lang="en">Somewhere My Love (Lara´s Theme)</li>
+                <li lang="en">Sand and Sea</li>
+                <li lang="en">What Now My Love</li>
+              </ul>
+              <a class="discografia_album_button" href="#" target="_blank"
+                >Ver más</a
+              >
+            </div>
+          </article>
         </section>
+
+        <!-- album selector -->
+        <div class="container album_selector">
+          <span class="album album1 active"></span>
+          <span class="album album2"></span>
+          <span class="album album3"></span>
+          <span class="album album4"></span>
+        </div>
       </main>
       <footer>
-        <nav>
+        <nav class="container">
           <a class="footer_logo" href="discografia.html">Frank Sinatra</a>
           <ul>
             <li><a href="../index.html">Inicio</a></li>
@@ -63,5 +192,10 @@
         </div>
       </footer>
     </div>
+
+    <!-- scripts, api jquery & prefixer -->
+    <script src="../scripts/prefixer.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="../scripts/main.js"></script>
   </body>
 </html>
