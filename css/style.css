@@ -96,7 +96,9 @@ p{
     animation: fade-right 1s ease-in-out;
 }
 
-
+.colored{
+    font-weight: 700;
+}
 
 
 /********** Header ***********/
@@ -382,6 +384,14 @@ footer nav{
     color: #030921;
     margin-bottom: 20px;
 }
+.discografia_album_year{
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    color: #6b6b6b;
+    font-size: 1rem;
+    font-style: italic;
+}
 .discografia img {
     border-radius: 6px;
 }
@@ -449,6 +459,13 @@ footer nav{
     background-image: url("../assets/album/album_min/thats_life_min.png");
 }
 
+.video_container{
+    text-align: center;
+    margin-top: 80px;
+}
+.video_container iframe{
+    margin: 80px auto;
+}
 
 
 @media screen and (max-width: 1024px) {
