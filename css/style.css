@@ -114,6 +114,7 @@ header nav {
     display: flex;
     justify-content: end;
     padding: 40px 0px;
+    z-index: 10;
 }
 nav ul {
     display: flex;
@@ -447,6 +448,71 @@ footer nav{
 .album4{
     background-image: url("../assets/album/album_min/thats_life_min.png");
 }
+
+
+
+@media screen and (max-width: 1024px) {
+    .container{
+        padding: 20px 60px;
+    }
+    header{
+        height: 640px;
+    }
+    header section h1 {
+     font-size: 5rem;
+    }
+    header section span{
+        font-size: 1.4rem;
+    }
+    header section p{
+        font-size: 1.1rem;
+        max-width: 500px;
+    }
+    header section .header_btn{
+        font-size: 1.1rem;
+        padding: 8px 30px;
+    }
+
+    .biografia{
+        font-size: 1rem;
+        padding: 120px 60px;
+    }
+    .biografia h2{
+        font-size: 3.3rem;
+        margin-bottom: 40px;
+    }
+    .biografia p{
+        font-size: 1.2rem;
+    }
+    .biografia img{
+        width: 420px;
+        height: auto;
+    }
+
+    .call_to_action{
+        padding-top: 40px;
+        padding-bottom: 0;
+    }
+    .call_to_action h2{
+        font-size: 2.6rem;
+        width: 320px;
+    }
+    .call_to_action h2::before{
+        width: 254px;
+        left: 52px ;
+    }
+    .call_to_action p{
+        font-size: 1.3rem;
+    }
+    .call_to_action a{
+        font-size: 1.3rem;
+        padding: 10px 30px;
+    }
+}
+
+
+
+
 
 
 
